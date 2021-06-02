@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @cryptofuturetoken - Call me CFT
 - 👀 I’m interested in crypto and I am planing a lot of project for business. 
-- 🌱 I’m currently learning coding. I am new. 
 - 💞️ I’m looking to collaborate on token creation and business capital gain.
 - 📫 How to reach me cryptofuturetoken@gmail.com 
 

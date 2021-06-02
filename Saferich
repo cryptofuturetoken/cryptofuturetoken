@@ -1,10 +1,12 @@
 // SPDX-License-Identifier: MIT
 
+// SPDX-License-Identifier: Unlicensed
+
 /**
    #SafeRich.Finance
    2% fee auto add to the liquidity pool to locked forever when selling
-   2% fee auto distribute to all holders.
-   2% fee auto moved to charity wallet.
+   2% fee auto distribute to all holders
+   2% fee auto moved to charity wallet
 */
 
 pragma solidity ^0.8.3;
@@ -786,7 +788,7 @@ contract SafeRich is Context, IERC20, Ownable {
     address private _charityWalletAddress = 0x74025c234Dc5b529eE1baFF1d94EbceDA53a0d78;
    
     uint256 private constant MAX = ~uint256(0);
-    uint256 private _tTotal = 150000 * 10**6 * 10**9;
+    uint256 private _tTotal = 1000000000 * 10**6 * 10**9;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
@@ -808,8 +810,8 @@ contract SafeRich is Context, IERC20, Ownable {
     bool inSwapAndLiquify;
     bool public swapAndLiquifyEnabled = true;
     
-    uint256 public _maxTxAmount = 75000 * 10**6 * 10**9;
-    uint256 private numTokensSellToAddToLiquidity = 7500 * 10**6 * 10**9;
+    uint256 public _maxTxAmount = 5000000 * 10**6 * 10**9;
+    uint256 private numTokensSellToAddToLiquidity = 500000 * 10**6 * 10**9;
     
     event MinTokensBeforeSwapUpdated(uint256 minTokensBeforeSwap);
     event SwapAndLiquifyEnabledUpdated(bool enabled);

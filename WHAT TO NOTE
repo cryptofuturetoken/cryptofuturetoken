@@ -1,0 +1,20 @@
+pragma solidity ^0.8.4;
+
+UNISWAP:
+TESTNET: 0xD99D1c33F9fC3444f8101754aBC46c52416550D1
+  
+MAINNET: IPancakeRouter02 _pancakeRouter = PancakeRouter02(0x10ED43C718714eb63d5aA57B78B54704E256024E);
+0x10ED43C718714eb63d5aA57B78B54704E256024E
+
+
+LP CHANGE
+//New Pancakeswap router version?
+//No problem, just change it!
+function setRouterAddress(address newRouter) public onlyOwner() {
+   //Thank you FreezyEx
+    IPancakeRouter02 _newPancakeRouter = IPancakeRouter02(newRouter);
+    PancakePair = IPancakeFactory(_newPancakeRouter.factory()).createPair(address(this), _newPancakeRouter.WETH());
+    PancakeRouter = _newPancakeRouter;
+}
+
+
